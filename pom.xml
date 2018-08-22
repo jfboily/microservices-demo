@@ -8,9 +8,14 @@
     <artifactId>microdemo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <packaging>pom</packaging>
+
     <modules>
         <module>config</module>
         <module>eureka</module>
+        <module>gateway</module>
+        <module>tool-service</module>
+        <module>color-service</module>
     </modules>
 
 
