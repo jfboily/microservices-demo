@@ -16,6 +16,7 @@
         <module>gateway</module>
         <module>tool-service</module>
         <module>color-service</module>
+        <module>frontend</module>
     </modules>
 
 
