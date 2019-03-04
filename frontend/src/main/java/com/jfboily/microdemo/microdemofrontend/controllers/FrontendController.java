@@ -4,8 +4,10 @@ import com.jfboily.microdemo.microdemofrontend.apiclients.MicrodemoApiClient;
 import com.jfboily.microdemo.microdemofrontend.entities.Color;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 @Controller
@@ -26,6 +28,12 @@ public class FrontendController {
         model.put("tool", tool);
 
         return "index";
+    }
+
+    @GetMapping("/logout")
+    public String logout(HttpServletRequest request) throws Exception {
+        request.logout();
+        return "redirect:http://192.168.99.100:8180/auth/realms/colortool/protocol/openid-connect/logout?redirect_uri=http%3A%2F%2Flocalhost%3A8087";
     }
 
 }

@@ -13,4 +13,5 @@ public interface MicrodemoApiClient {
 
     @RequestMapping(method = RequestMethod.GET, value = "/api/v1/tool-service/tool")
     String getTool();
+
 }
