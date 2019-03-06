@@ -42,6 +42,4 @@ public class ColorServiceConfiguration {
             colors.add(color);
         });
     }
-
-
 }

@@ -33,7 +33,7 @@ public class FrontendController {
     @GetMapping("/logout")
     public String logout(HttpServletRequest request) throws Exception {
         request.logout();
-        return "redirect:http://192.168.99.100:8180/auth/realms/colortool/protocol/openid-connect/logout?redirect_uri=http%3A%2F%2Flocalhost%3A8087";
+        return "redirect:http://localhost:8180/auth/realms/colortool/protocol/openid-connect/logout?redirect_uri=http%3A%2F%2Flocalhost%3A8087";
     }
 
 }
